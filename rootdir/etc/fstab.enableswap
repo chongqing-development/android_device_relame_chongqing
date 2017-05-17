@@ -1,2 +1,2 @@
-/dev/block/zram0 none swap defaults zramsize=75%,swapprio=10,zram_backingdev_size=4G
+/dev/block/zram0 none swap defaults zramsize=75%,max_comp_streams=8,swapprio=10,zram_backingdev_size=4G
 
