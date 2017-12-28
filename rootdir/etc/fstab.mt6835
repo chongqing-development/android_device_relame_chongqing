@@ -64,7 +64,7 @@ vendor_dlkm                                   /vendor_dlkm        ext4     ro   
 /dev/block/by-name/sspm2                      /sspm2              emmc     defaults defaults
 /dev/block/by-name/tee1                       /tee1               emmc     defaults defaults
 /dev/block/by-name/tee2                       /tee2               emmc     defaults defaults
-/dev/block/by-name/userdata                   /data               f2fs     noatime,nosuid,nodev,discard,noflush_merge,fsync_mode=nobarrier,reserve_root=134217,resgid=1065,inlinecrypt    wait,check,formattable,quota,latemount,resize,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity
+/dev/block/by-name/userdata                   /data               f2fs     noatime,nosuid,nodev,discard,noflush_merge,fsync_mode=nobarrier,reserve_root=134217,resgid=1065,inlinecrypt    wait,check,formattable,quota,latemount,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity
 /dev/block/by-name/vbmeta                     /vbmeta             emmc     defaults defaults
 /dev/block/by-name/vbmeta_system              /vbmeta_system      emmc     defaults    first_stage_mount,nofail,slotselect,avb=vbmeta
 /dev/block/by-name/vbmeta_vendor              /vbmeta_vendor      emmc     defaults    first_stage_mount,nofail,slotselect
