@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
     init.mt6835.rc \
     init.mt6835.usb.rc \
     init.mtkgki.rc \
+    init.oplus.rc \
     init.project.rc \
     init.sensor_2_0.rc
 
