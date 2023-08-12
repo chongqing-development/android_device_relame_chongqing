@@ -1,0 +1,33 @@
+//
+// Copyright (C) 2026 LineageOS
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+
+sh_binary {
+    name: "init.insmod.sh",
+    src: "bin/init.insmod.sh",
+    required: [ "init.insmod.mt6835.cfg" ],
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "fstab.enableswap",
+    src: "etc/fstab.enableswap",
+    vendor: true,
+    vendor_ramdisk_available: true,
+}
+
+prebuilt_etc {
+    name: "fstab.mt6835",
+    src: "etc/fstab.mt6835",
+    vendor: true,
+    vendor_ramdisk_available: true,
+}
+
+prebuilt_etc {
+    name: "init.insmod.mt6835.cfg",
+    src: "etc/init.insmod.mt6835.cfg",
+    vendor: true,
+}
