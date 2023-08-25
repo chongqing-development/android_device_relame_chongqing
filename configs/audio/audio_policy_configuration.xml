@@ -298,13 +298,6 @@
 
         </module>
 
-        <!-- #ifndef OPLUS_FEATURE_VIRTUAL_AUDIO -->
-        <!-- William.Fan@NEOP.ABILITY.VD , 2022/02/09, Added for Virtual Audio HAL -->
-        <xi:include href="/odm/etc/virtual_audio_policy_configuration.xml">
-            <xi:fallback></xi:fallback>
-        </xi:include>
-        <!-- endif OPLUS_FEATURE_VIRTUAL_AUDIO -->
-
         <!-- BT Audio HAL -->
         <xi:include href="bluetooth_audio_policy_configuration.xml"/>
 
