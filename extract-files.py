@@ -63,6 +63,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('android.hardware.security.rkp-V2-ndk.so'),
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
+    'system_ext/lib64/libsink.so': blob_fixup()
+        .add_needed('libshim_sink.so'),
     'system_ext/lib64/libsource.so': blob_fixup()
         .add_needed('libui_shim.so'),
     (
