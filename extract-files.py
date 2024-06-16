@@ -49,6 +49,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libnvram.so'
     ): blob_fixup()
         .add_needed('libbase_shim.so'),
+    'system_ext/lib64/libsource.so': blob_fixup()
+        .add_needed('libui_shim.so'),
     (
         'vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so',
         'vendor/lib64/libcodec2_vpp_AISR_plugin.so'
