@@ -37,6 +37,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/hw/mt6835/camerahalserver': blob_fixup()
+        .add_needed('libcamera_metadata_shim.so'),
     'vendor/bin/hw/android.hardware.graphics.composer@3.1-service': blob_fixup()
         .replace_needed('android.hardware.graphics.composer@2.1-resources.so', 'android.hardware.graphics.composer@2.1-resources-v34.so'),
     'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
