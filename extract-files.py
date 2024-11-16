@@ -36,7 +36,11 @@ lib_fixups: lib_fixups_user_type = {
     (
         'vendor.mediatek.hardware.videotelephony@1.0',
         'libmpbase'
-    ): lib_fixup_vendor_suffix
+    ): lib_fixup_vendor_suffix,
+    (
+        'libsink'
+    ): lib_fixup_remove,
+
 }
 
 blob_fixups: blob_fixups_user_type = {
