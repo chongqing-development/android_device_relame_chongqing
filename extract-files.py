@@ -39,6 +39,16 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
+    (
+        'vendor/lib/mt6835/libneuralnetworks_sl_driver_mtk_prebuilt.so',
+        'vendor/lib64/mt6835/libneuralnetworks_sl_driver_mtk_prebuilt.so'
+    ): blob_fixup()
+        .add_needed('libbase_shim.so'),
+    (
+        'vendor/lib/libnvram.so',
+        'vendor/lib64/libnvram.so'
+    ): blob_fixup()
+        .add_needed('libbase_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
