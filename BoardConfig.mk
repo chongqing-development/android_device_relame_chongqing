@@ -54,6 +54,7 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 BOARD_KERNEL_CMDLINE += \
     bootopt=64S3,32N2,64N2 \
+    androidboot.console=0 \
     androidboot.init_fatal_reboot_target=recovery \
     rcu_nocbs=all rcutree.enable_rcu_lazy \
     kasan=off
