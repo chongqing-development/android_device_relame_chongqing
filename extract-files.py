@@ -80,6 +80,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     'odm/bin/hw/vendor.oplus.hardware.charger-V3-service': blob_fixup()
         .add_needed('libbase_shim.so'),
+    'vendor/lib/libvcodec_oal.so': blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
     'system_ext/etc/init/init.vtservice.rc': blob_fixup()
         .regex_replace('start', 'enable'),
     'vendor/bin/hw/android.hardware.security.keymint@2.0-service.trustonic': blob_fixup()
