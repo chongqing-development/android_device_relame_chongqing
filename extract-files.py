@@ -49,6 +49,11 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libnvram.so'
     ): blob_fixup()
         .add_needed('libbase_shim.so'),
+    (
+        'vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so',
+        'vendor/lib64/libcodec2_vpp_AISR_plugin.so'
+    ): blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V3-ndk', 'android.hardware.graphics.common-V6-ndk'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
