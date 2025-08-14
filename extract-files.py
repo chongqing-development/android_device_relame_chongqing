@@ -37,6 +37,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/hw/mtkfusionrild': blob_fixup()
+        .add_needed('libutils-v33.so'),
     'vendor/bin/hw/mt6835/camerahalserver': blob_fixup()
         .add_needed('libcamera_metadata_shim.so'),
     'vendor/bin/hw/android.hardware.graphics.composer@3.1-service': blob_fixup()
