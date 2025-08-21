@@ -55,6 +55,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     'system_ext/etc/init/init.vtservice.rc': blob_fixup()
         .regex_replace('start', 'enable'),
+    'vendor/bin/hw/android.hardware.security.keymint@2.0-service.trustonic': blob_fixup()
+        .add_needed('android.hardware.security.rkp-V2-ndk.so'),
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
     'system_ext/lib64/libsource.so': blob_fixup()
