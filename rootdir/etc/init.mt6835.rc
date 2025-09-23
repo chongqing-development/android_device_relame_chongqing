@@ -26,8 +26,6 @@ on early-init
 on init
     write /proc/bootprof "INIT:init"
 
-    mkdir /mnt/cd-rom 0000 system system
-
 # change lk_env permission
     chown root system /proc/lk_env
     chmod 0660 /proc/lk_env
