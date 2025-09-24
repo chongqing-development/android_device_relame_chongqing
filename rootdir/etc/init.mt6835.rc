@@ -398,10 +398,6 @@ on post-fs-data
     chown radio system /sys/devices/platform/mt-pmic/low_battery_protect_stop
     chown radio system /sys/devices/platform/mt-pmic/low_battery_protect_ut
 
-    #MDDB
-    mkdir /data/vendor_de/meta 0770 system system
-    mkdir /data/vendor_de/meta/mddb 0770 system system
-
     chown system /sys/devices/platform/msensor/driver/cpsopmode
     chown system /sys/devices/platform/msensor/driver/cpsreptxy
     chown system /sys/devices/platform/msensor/driver/cpsreptz
@@ -977,30 +973,6 @@ on property:ro.boot.slot_suffix=_a
 on property:ro.boot.slot_suffix=_b
     # Set SELinux security contexts on upgrade or policy update.
     mount ext4 /dev/block/by-name/mcf_ota_b /mnt/vendor/mdota ro wait noatime
-
-# add meta_tst for ATM
-service meta_tst /vendor/bin/meta_tst
-    class core
-    user root
-    group radio gps system wifi audio bluetooth media
-    capabilities NET_RAW NET_ADMIN
-    socket meta-atci stream 660 radio system
-    disabled
-    oneshot
-
-service factory_no_image /vendor/bin/factory
-    user root
-    group radio system wifi media gps audio bluetooth wakelock nfc
-    capabilities BLOCK_SUSPEND NET_RAW NET_ADMIN SYS_ADMIN SYS_BOOT
-    socket factory-atci stream 660 radio system
-    disabled
-    oneshot
-
-# start meta_tst for ATM
-on property:sys.boot_completed=1 && property:ro.boot.atm=enable
-    start meta_tst
-    start loghidlvendorservice
-    start loghidlsysservice
 
 # reset mdmode when modem crash happens in ATM
 on property:vendor.mtk.md1.status=reset
