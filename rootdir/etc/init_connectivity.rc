@@ -2,7 +2,6 @@
 
 on post-fs-data
     mkdir /data/vendor/stp_dump 0755 system system
-    mkdir /data/vendor/connsyslog 0755 system system
 
 on boot
 
