@@ -355,7 +355,6 @@ PRODUCT_PACKAGES += \
     init_connectivity.rc \
     init.cgroup.rc \
     init.connectivity.common.rc \
-    init.connectivity.rc \
     init.modem.rc \
     init.mt6835.rc \
     init.mt6835.usb.rc \

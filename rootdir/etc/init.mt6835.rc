@@ -1,7 +1,9 @@
 # MTK platform .rc configure
 
-import ${ro.vendor.rc}init.connectivity.rc
+import ${ro.vendor.rc}init_connectivity.rc
+import ${ro.vendor.rc}init.connectivity.common.rc
 import ${ro.vendor.rc}init.mt6835.usb.rc
+import ${ro.vendor.rc}init.mtkgki.rc
 import /vendor/etc/init/hw/init.project.rc
 import /vendor/etc/init/hw/init.aee.rc
 import ${ro.vendor.rc}init.volte.rc
