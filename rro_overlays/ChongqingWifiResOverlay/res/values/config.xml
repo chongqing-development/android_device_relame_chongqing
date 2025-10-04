@@ -77,4 +77,7 @@
          rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
     <string translatable="false" name="config_wifi_tcp_buffers">1730560,3461120,6922240,524288,1048576,4525824</string>
 
+    <!-- Indicates that bridged AP mode is supported on this device -->
+    <bool translatable="false" name="config_wifiBridgedSoftApSupported">true</bool>
+
 </resources>
