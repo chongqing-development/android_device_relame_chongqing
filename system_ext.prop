@@ -1,0 +1,8 @@
+# Radio
+ro.vendor.mtk_gwsd_support=1
+ro.vendor.mtk_telephony_add_on_policy=0
+persist.vendor.mtk_rcs_single_reg_support=1
+persist.vendor.mtk.vilte.enable=1
+persist.vendor.pco5.radio.ctrl=0
+vendor.rild.libargs=-d /dev/ttyC0
+vendor.rild.libpath=mtk-ril.so
