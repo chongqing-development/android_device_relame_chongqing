@@ -42,8 +42,8 @@ ro.vendor.mtk_flv_playback_support=1
 ro.vendor.mtk_omacp_support=1
 
 # SurfaceFlinger
-debug.sf.auto_latch_unsignaled=false
-debug.sf.enable_gl_backpressure=0
+debug.sf.auto_latch_unsignaled=true
+debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.latch_unsignaled=true
 debug.sf.predict_hwc_composition_strategy=0
