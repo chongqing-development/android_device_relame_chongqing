@@ -116,7 +116,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libcodec2_vpp_AISR_plugin.so',
         'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so'
     ): blob_fixup()
-        .replace_needed('android.hardware.graphics.common-V3-ndk', 'android.hardware.graphics.common-V6-ndk'),
+        .replace_needed('android.hardware.graphics.common-V3-ndk', 'android.hardware.graphics.common-V7-ndk'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
