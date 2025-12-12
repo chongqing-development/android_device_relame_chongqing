@@ -12,7 +12,6 @@ vendor/bin/rt5512_calibration
 vendor/bin/smartpa_nvtest
 vendor/etc/mtk_vext_info
 vendor/lib/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib/hw/audio.primary.mt6835.so
-vendor/lib/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib/hw/audio.r_submix.mt6835.so
 vendor/lib/hw/sound_trigger.primary.default.so
 vendor/lib/lib_iir.so
 vendor/lib/libaudio_engineer_test.so
@@ -54,7 +53,6 @@ vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib/vendor.mediatek.hardware.audio@8.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
 vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.mt6835.so
-vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submix.mt6835.so
 vendor/lib64/hw/sound_trigger.primary.default.so
 vendor/lib64/lib_iir.so
 vendor/lib64/libaudio_engineer_test.so
