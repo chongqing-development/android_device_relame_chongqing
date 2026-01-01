@@ -1472,7 +1472,6 @@ vendor/lib/libpixelflinger.so
 vendor/lib/libSQLiteModule_VER_ALL.so
 vendor/lib/mt6835/arm.graphics-V2-ndk.so;SYMLINK=vendor/lib/arm.graphics-V2-ndk.so
 vendor/lib/mt6835/arm.graphics-V3-ndk.so;SYMLINK=vendor/lib/arm.graphics-V3-ndk.so
-vendor/lib/mt6835/arm.mali.platform-V1-ndk.so;SYMLINK=vendor/lib/arm.mali.platform-V1-ndk.so
 vendor/lib/mt6835/hi1336_mipi_raw_chongqing_IdxMgr.so;SYMLINK=vendor/lib/hi1336_mipi_raw_chongqing_IdxMgr.so
 vendor/lib/mt6835/hi1336_mipi_raw_chongqing_tuning.so;SYMLINK=vendor/lib/hi1336_mipi_raw_chongqing_tuning.so
 vendor/lib/mt6835/lib3a.ae.core.so;SYMLINK=vendor/lib/lib3a.ae.core.so
@@ -2003,7 +2002,6 @@ vendor/lib64/libudf.so
 vendor/lib64/libVDBlurless.so;MODULE_SUFFIX=_vendor
 vendor/lib64/mt6835/arm.graphics-V2-ndk.so;SYMLINK=vendor/lib64/arm.graphics-V2-ndk.so
 vendor/lib64/mt6835/arm.graphics-V3-ndk.so;SYMLINK=vendor/lib64/arm.graphics-V3-ndk.so
-vendor/lib64/mt6835/arm.mali.platform-V1-ndk.so;SYMLINK=vendor/lib64/arm.mali.platform-V1-ndk.so
 vendor/lib64/mt6835/hi1336_mipi_raw_chongqing_IdxMgr.so;SYMLINK=vendor/lib64/hi1336_mipi_raw_chongqing_IdxMgr.so
 vendor/lib64/mt6835/hi1336_mipi_raw_chongqing_tuning.so;SYMLINK=vendor/lib64/hi1336_mipi_raw_chongqing_tuning.so
 vendor/lib64/mt6835/lib3a.ae.core.so;SYMLINK=vendor/lib64/lib3a.ae.core.so
