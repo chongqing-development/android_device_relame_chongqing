@@ -274,11 +274,14 @@ ro.vendor.mtk_f2fs_enable=1
 
 # SurfaceFlinger
 debug.sf.disable_backpressure=1
-debug.sf.early.sf.duration=16600000
-debug.sf.earlyGl.sf.duration=16600000
+debug.sf.early.app.duration=11600000
+debug.sf.early.sf.duration=12300000
+debug.sf.earlyGl.app.duration=11600000
+debug.sf.earlyGl.sf.duration=12300000
 debug.sf.frame_rate_multiple_threshold=120
-debug.sf.late.sf.duration=10500000
-debug.sf.use_phase_offsets_as_durations=0
+debug.sf.late.app.duration=11600000
+debug.sf.late.sf.duration=12300000
+debug.sf.use_phase_offsets_as_durations=1
 vendor.debug.sf.cpupolicy.base_min_bl=330
 vendor.debug.sf.cpupolicy.bl_mask=192
 vendor.debug.sf.cpupolicy.foreground=1
