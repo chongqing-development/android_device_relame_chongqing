@@ -100,6 +100,9 @@ ro.vendor.arm.egl.configs.r8_g8_b8_a8_32bit_fixed.recordable=true
 ro.vendor.composer_version=2.1
 ro.vendor.mtk_ovl_bringup=0
 
+# MTE
+ro.arm64.memtag.bootctl_supported=1
+
 # Display (Picture Quality)
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1
