@@ -216,6 +216,7 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 # IMS
+$(call inherit-product, hardware/lineage/compat/frameworks/compat.mk)
 $(call inherit-product, vendor/mediatek/ims/ims.mk)
 
 # Init
