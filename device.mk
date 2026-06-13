@@ -97,3 +97,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # VNDK
 PRODUCT_PACKAGES += \
     vndservicemanager
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/realme/chongqing/chongqing-vendor.mk)

@@ -24,6 +24,7 @@ namespace_imports = [
     'device/realme/chongqing',
     'hardware/mediatek',
     'hardware/oplus',
+    'vendor/realme/chongqing',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
