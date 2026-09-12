@@ -100,7 +100,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml': blob_fixup()
         .regex_replace('1.1', '1.2'),
     'system_ext/lib64/libsink-mtk.so': blob_fixup()
-        .add_needed('libshim_sink.so'),
+        .add_needed('libshim_sink.so')
+        .add_needed('libaudioclient_shim.so'),
     'system_ext/lib64/libimsma.so': blob_fixup()
         .replace_needed('libsink.so', 'libsink-mtk.so'),
     'system_ext/lib64/libsource.so': blob_fixup()
