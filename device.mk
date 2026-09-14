@@ -266,6 +266,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/configs/nfc/com.oplus.nfc_feature.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.oplus.nfc_feature.xml
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.nxp.mifare.xml
+
 # Orms
 PRODUCT_PACKAGES += \
     orms_core_config
