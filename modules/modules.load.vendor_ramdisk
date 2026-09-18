@@ -1,13 +1,7 @@
 bootprof.ko
-irq-dbg.ko
 dbgtop-drm.ko
-mrdump.ko
 mtk_disp_notify.ko
-aee_aed.ko
-aee_hangdet.ko
-monitor_hang.ko
 device_info.ko
-mtk_printk_ctrl.ko
 log_store.ko
 nvmem_mtk-devinfo.ko
 mtk_wdt.ko
@@ -74,7 +68,6 @@ oplus23661_tm_nt36672c_fhd_dsi_vdo.ko
 mediatek-drm-gateic.ko
 mediatek-drm-panel-drv.ko
 mediatek-drm.ko
-aee_rs.ko
 mmprofile.ko
 mtk-uart-apdma.ko
 uarthub_drv.ko
@@ -93,8 +86,6 @@ rpmb.ko
 rpmb-mtk.ko
 ufs-mediatek-mod.ko
 ufs-mediatek-dbg.ko
-blocktag.ko
-pidmap.ko
 mtk-pmic-keys.ko
 mtk-kpd.ko
 regulator-vibrator.ko

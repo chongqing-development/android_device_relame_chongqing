@@ -112,7 +112,6 @@ mtk_qos.ko
 powerhal_cpu_ctrl.ko
 touch_boost.ko
 mtk_ioctl_touch_boost.ko
-atf_logger.ko
 vcp.ko
 mtk_jpeg.ko
 mtk-vcodec-common.ko
@@ -151,7 +150,6 @@ task_turbo.ko
 cpufreq_sugov_ext.ko
 scheduler.ko
 mtk_core_ctl.ko
-cpuqos_v3.ko
 camera_fdvt_isp51.ko
 cpudvfs.ko
 imgsensor_isp6s.ko
