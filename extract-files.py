@@ -24,6 +24,7 @@ namespace_imports = [
     'device/realme/chongqing',
     'hardware/mediatek',
     'hardware/oplus',
+    'hardware/mediatek/libion_mtk',
     'hardware/mediatek/libmtkperf_client',
     'vendor/realme/chongqing',
 ]

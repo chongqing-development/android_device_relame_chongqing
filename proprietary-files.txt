@@ -2289,8 +2289,6 @@ vendor/lib/hw/mt6835/android.hardware.graphics.allocator@4.0-impl-mediatek.so;SY
 vendor/lib/hw/mt6835/android.hardware.graphics.mapper@4.0-impl-mediatek.so;SYMLINK=vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib/hw/mt6835/gralloc.common.so;SYMLINK=vendor/lib/hw/gralloc.common.so
 vendor/lib/libdre.so
-vendor/lib/libion_mtk.so
-vendor/lib/libion_ulit.so
 vendor/lib/libmml.so
 vendor/lib/libnpagent.so
 vendor/lib/mt6835/libdpframework.so;SYMLINK=vendor/lib/libdpframework.so
@@ -2302,8 +2300,6 @@ vendor/lib64/hw/mt6835/gralloc.common.so;SYMLINK=vendor/lib64/hw/gralloc.common.
 vendor/lib64/libcomposer_ext.so
 vendor/lib64/libcwb_mtk.so;DISABLE_DEPS
 vendor/lib64/libdre.so
-vendor/lib64/libion_mtk.so
-vendor/lib64/libion_ulit.so
 vendor/lib64/libmml.so
 vendor/lib64/libnpagent.so
 vendor/lib64/libVkLayer_mtk_rt_sdk.so
