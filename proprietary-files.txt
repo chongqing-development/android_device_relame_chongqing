@@ -36,6 +36,12 @@ vendor/lib64/vendor.mediatek.hardware.dmc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.dmc@1.1.so
 vendor/lib64/vendor.mediatek.hardware.dmc@1.2.so
 
+# Health
+vendor/bin/fuelgauged
+vendor/bin/fuelgauged_nvram
+vendor/lib/libfgauge_gm30.so
+vendor/lib64/libfgauge_gm30.so
+
 # Native public libraries
 vendor/etc/public.libraries.txt
 
