@@ -328,6 +328,27 @@ vendor/lib64/libmmprofile.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
+# Sensors
+odm/bin/hw/vendor-oplus-hardware-oplusSensor-V1-service
+odm/etc/init/vendor-oplus-hardware-oplusSensor-V1-service.rc
+odm/etc/sensor/sensor_config.json
+odm/etc/vintf/manifest/manifest_oplusSensor_aidl.xml
+odm/lib/vendor.oplus.hardware.oplusSensor-V1-ndk.so
+odm/lib64/libhwm-oplus.so
+odm/lib64/vendor.oplus.hardware.oplusSensor-V1-ndk.so
+vendor/etc/elliptic_sensor.xml
+vendor/lib/hw/sensors.dynamic_sensor_hal.so
+vendor/lib/libsensorndkbridge.so
+vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
+vendor/lib64/hw/sensors.dynamic_sensor_hal.so
+vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6835.so
+vendor/lib64/libhfmanager.so
+vendor/lib64/libhfmanagerwrapper.so
+vendor/lib64/libhwm-oplus.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libksensor.so
+vendor/lib64/libsensorndkbridge.so
+vendor/lib64/libSensorSave.so
+
 # UFS Firmware
 odm/firmware/ufs/MICRON-MT128GAXAU2U22.bin
 odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh
