@@ -39,6 +39,36 @@ BOARD_SHIPPING_API_LEVEL := 33
 PRODUCT_SHIPPING_API_LEVEL := 34
 
 # Audio
+$(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
+
+PRODUCT_PACKAGES += \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.service \
+    android.hardware.audio@7.1-impl \
+    android.hardware.audio@7.1-util \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.soundtrigger@2.3-impl
+
+PRODUCT_PACKAGES += \
+    audio.primary.default \
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio.usb.default
+
+PRODUCT_PACKAGES += \
+    libaudiopreprocessing \
+    libbundlewrapper \
+    libdownmix \
+    libdynproc \
+    libeffectproxy \
+    libhapticgenerator \
+    libldnhncr \
+    libreverbwrapper \
+    libvisualizer
+
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_effects.xml
 
