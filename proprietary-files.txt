@@ -406,6 +406,18 @@ vendor/etc/AudioLog_dynamic.xml
 # Audio Firmware
 odm/firmware/sipa.bin
 
+# Bluetooth
+vendor/etc/init/init.bt_drv.rc
+vendor/lib/libbluetooth_mtk.so
+vendor/lib/libbluetooth_mtk_pure.so
+vendor/lib/libbt-vendor.so
+vendor/lib64/libbluetooth_mtk.so
+vendor/lib64/libbluetooth_mtk_pure.so
+vendor/lib64/libbt-vendor.so
+
+# Bluetooth Firmware
+vendor/firmware/BT_FW.cfg
+
 # CDSP
 odm/lib64/libcdsprpc.so
 vendor/lib64/libadsprpc.so
