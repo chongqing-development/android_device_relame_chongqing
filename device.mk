@@ -205,6 +205,16 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek/libmtkperf_client \
     hardware/oplus
 
+# Touch
+$(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_GM,false)
+$(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_HTPR,false)
+$(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_TG,false)
+$(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,USE_OPLUSTOUCH,true)
+
+PRODUCT_PACKAGES += \
+    vendor-oplus-hardware-touch-V2-service \
+    vendor.lineage.touch-service.oplus
+
 # VNDK
 PRODUCT_PACKAGES += \
     vndservicemanager

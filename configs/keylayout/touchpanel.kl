@@ -1,0 +1,6 @@
+# Touchpanel gesture keys.
+#
+# The touchpanel driver reports every black screen gesture, including the
+# double tap used for "double tap to wake", as KEY_F4 (scan code 62). F4 is
+# not a wake key, so remap it to WAKEUP to make the gesture wake the screen.
+key 62 WAKEUP
