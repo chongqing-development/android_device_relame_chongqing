@@ -987,3 +987,13 @@ odm/lib/vendor.oplus.hardware.urcc-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.urcc-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.urcc-V1-ndk.so;MODULE_SUFFIX=_vendor
+
+# Wi-Fi Firmware
+vendor/firmware/remoteproc_scp
+vendor/firmware/WMT_SOC.cfg
+
+# Wifi
+vendor/bin/wmt_launcher
+vendor/bin/wmt_loader
+vendor/etc/init/init.wlan_drv.rc
+vendor/etc/init/init.wmt_drv.rc
