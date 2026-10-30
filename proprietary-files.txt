@@ -638,6 +638,12 @@ vendor/firmware/soc_fm_v1_patch.bin
 # FMRadio
 vendor/etc/init/init.fmradio_drv.rc
 
+# Gatekeeper
+vendor/lib/hw/libMcGatekeeper.so;SYMLINK=vendor/lib/hw/gatekeeper.trustonic.so
+vendor/lib/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib/hw/gatekeeper.default.so
+vendor/lib64/hw/libMcGatekeeper.so;SYMLINK=vendor/lib64/hw/gatekeeper.trustonic.so
+vendor/lib64/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib64/hw/gatekeeper.default.so
+
 # Graphics (MediaTek + ARM mali)
 vendor/etc/mali_platform.config
 vendor/lib/egl/mt6835/libGLES_mali.so;SYMLINK=vendor/lib/egl/libGLES_mali.so

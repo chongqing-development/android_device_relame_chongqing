@@ -145,6 +145,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0-impl \
+    libgatekeeper.vendor
+
 # Health
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/oplus_chg/battery/mmi_charging_enable)
 $(call soong_config_set,lineage_health,charging_control_charging_enabled,1)
