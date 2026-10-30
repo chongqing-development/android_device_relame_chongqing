@@ -37,4 +37,18 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.biometrics.fingerprintpay</name>
+        <interface>
+            <name>IFingerprintPay</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.fido.fidoca</name>
+        <interface>
+            <name>IFidoDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>

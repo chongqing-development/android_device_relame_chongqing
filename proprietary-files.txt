@@ -591,6 +591,31 @@ vendor/lib64/lib_eara_io_timer.so
 vendor/lib64/lib_eara_io_util.so
 vendor/lib64/libneuroeara.so
 
+# Fido
+odm/bin/hw/vendor.oplus.hardware.fido.fidoca@1.0-service
+odm/etc/init/vendor.oplus.hardware.fido.fidoca@1.0-service.rc
+odm/etc/vintf/manifest/manifest_oplus_fido.xml
+odm/lib/libfido_factory.so
+odm/lib/vendor.oplus.hardware.fido.fido2ca-V1-ndk.so
+odm/lib/vendor.oplus.hardware.fido.fidoca-V1-ndk.so
+odm/lib64/libfido_factory.so
+odm/lib64/vendor.oplus.hardware.fido.fido2ca-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.fido.fidoca-V1-ndk.so
+
+# Fingerprint
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
+odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
+odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
+
+# Fingerprint Pay
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service
+odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc
+odm/etc/vintf/manifest/manifest_oplus_ifaa.xml
+odm/lib/librpmbengclient.so
+odm/lib/libsecurity_event_dcs_vnd.so
+odm/lib64/librpmbengclient.so
+odm/lib64/libsecurity_event_dcs_vnd.so
+
 # FM Firmware
 vendor/firmware/fm_cust.cfg
 vendor/firmware/mt6627_fm_v1_coeff.bin
