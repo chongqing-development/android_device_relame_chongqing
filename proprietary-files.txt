@@ -1450,6 +1450,17 @@ vendor/lib64/vendor.oplus.hardware.urcc-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/firmware/remoteproc_scp
 vendor/firmware/WMT_SOC.cfg
 
+# Widevine
+odm/lib/liboemcrypto.so
+odm/lib64/liboemcrypto.so
+vendor/bin/hw/android.hardware.drm-service.widevine
+vendor/etc/init/android.hardware.drm-service.widevine.rc
+vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
+vendor/lib/liburee_meta_drmkeyinstall.so
+vendor/lib/libwvaidl.so
+vendor/lib64/liburee_meta_drmkeyinstall.so
+vendor/lib64/libwvaidl.so
+
 # Wifi
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
