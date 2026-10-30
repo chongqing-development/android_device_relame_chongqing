@@ -7,4 +7,10 @@
         <name>vendor.oplus.hardware.handlefactory</name>
         <fqname>IHandleFactory/default</fqname>
     </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.oplus.hardware.radio</name>
+        <version>2</version>
+        <fqname>IRadioStable/OplusRadio0</fqname>
+        <fqname>IRadioStable/OplusRadio1</fqname>
+    </hal>
 </manifest>

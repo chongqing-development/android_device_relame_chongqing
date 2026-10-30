@@ -51,4 +51,12 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.appradioaidl</name>
+        <interface>
+            <name>IAppRadioStable</name>
+            <instance>OplusAppRadio0</instance>
+            <instance>OplusAppRadio1</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
