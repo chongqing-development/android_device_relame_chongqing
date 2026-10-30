@@ -300,4 +300,44 @@
         <fqname>@1.2::ISecureElement/SIM1</fqname>
         <fqname>@1.2::ISecureElement/SIM2</fqname>
     </hal>
+    <hal format="hidl">
+        <name>android.hardware.renderscript</name>
+        <transport arch="32+64">passthrough</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDevice</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IDevice/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.mmagent</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IMMAgent</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.1::IMMAgent/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.mms</name>
+        <transport>hwbinder</transport>
+        <version>1.7</version>
+        <interface>
+            <name>IMms</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.7::IMms/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.videotelephony</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IVideoTelephony</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IVideoTelephony/default</fqname>
+    </hal>
 </manifest>
