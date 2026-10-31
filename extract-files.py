@@ -78,6 +78,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/mt6835/libneuralnetworks_sl_driver_mtk_prebuilt.so'
     ): blob_fixup()
         .add_needed('libbase_shim.so'),
+    'odm/bin/hw/vendor.oplus.hardware.charger-V3-service': blob_fixup()
+        .add_needed('libbase_shim.so'),
     'system_ext/etc/init/init.vtservice.rc': blob_fixup()
         .regex_replace('start', 'enable'),
     'vendor/bin/hw/android.hardware.security.keymint@2.0-service.trustonic': blob_fixup()
