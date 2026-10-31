@@ -225,6 +225,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor
 
+PRODUCT_PACKAGES += \
+    PowerOffAlarm
+
 $(call soong_config_set,power_libperfmgr,mode_extension_lib,power-ext-oplus)
 
 PRODUCT_PACKAGES += \
