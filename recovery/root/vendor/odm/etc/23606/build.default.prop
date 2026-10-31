@@ -1,0 +1,18 @@
+# Bluetooth
+bluetooth.device.default_name=realme V50S
+
+# Camera
+ro.vendor.oplus.camera.backCamSize=13MP+2MP
+ro.vendor.oplus.camera.frontCamSize=8MP
+
+# Region
+ro.vendor.oplus.regionmark=CN
+persist.sys.oplus.region=CN
+
+# RIL
+persist.vendor.oplus.radio.ct_volte_support=2
+ro.vendor.mtk_c2k_lte_mode=2
+ro.vendor.mtk_c2k_support=1
+ro.vendor.mtk_md1_support=25
+ro.vendor.mtk_protocol1_rat_config=N/C/Lf/Lt/W/G
+ro.vendor.mtk_ps1_rat=N/C/Lf/Lt/W/G

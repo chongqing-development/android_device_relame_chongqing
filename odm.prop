@@ -49,6 +49,9 @@ ro.lmk.psi_complete_stall_ms=150
 ro.lmk.swap_free_low_percentage=20
 ro.lmk.swap_is_low_kill_enable=1
 
+# Regional properties
+import /odm/etc/${ro.boot.prjname}/build.default.prop
+
 # RIL
 persist.vendor.radio.subsys_daemon_support=0
 persist.vendor.radio.telecom.vibrate=0

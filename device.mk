@@ -241,6 +241,16 @@ PRODUCT_COPY_FILES += \
 # Properties
 include hardware/mediatek/configs/properties/vendor_logtag.mk
 
+# Regional properties
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23604/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/23604/build.default.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23605/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/23605/build.default.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23606/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/23606/build.default.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23660/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/23660/build.default.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23661/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/23661/build.default.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23670/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/23670/build.default.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23671/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/23671/build.default.prop
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.insmod.sh
