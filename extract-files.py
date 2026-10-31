@@ -42,6 +42,12 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/mt6835/libcam.afhal.so': blob_fixup()
         .replace_needed('vendor.oplus.hardware.commondcs-V1-ndk_platform.so', 'vendor.oplus.hardware.commondcs-V1-ndk.so'),
+    (
+    'vendor/lib64/hw/vendor.oplus.hardware.cameraextension-V1-service-impl.so',
+    'vendor/lib64/mt6835/libmtkcam_featurepolicy.so',
+    'vendor/lib64/mt6835/libmtkcam_pipelinemodel.so'
+    ): blob_fixup()
+        .replace_needed('vendor.oplus.hardware.osense.client-V1-ndk_platform.so', 'vendor.oplus.hardware.osense.client-V1-ndk.so'),
     'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v33.so'),
     'vendor/bin/hw/mt6835/camerahalserver': blob_fixup()
