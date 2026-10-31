@@ -11,6 +11,10 @@ odm/lib64/libcdsprpc.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libcdsprpc.so;MODULE_SUFFIX=_vendor
 
+# ChipInfo
+vendor/bin/chipinfo
+vendor/etc/init/chipinfo_init.rc
+
 # DMC
 vendor/bin/dmc_core
 vendor/etc/init/dmc_core.rc
