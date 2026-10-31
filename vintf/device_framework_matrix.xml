@@ -1,2 +1,16 @@
 <compatibility-matrix version="7.0" type="framework">
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.handlefactory</name>
+        <interface>
+            <name>IHandleFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.urcc</name>
+        <interface>
+            <name>IUrcc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>

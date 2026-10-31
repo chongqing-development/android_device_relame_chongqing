@@ -100,6 +100,23 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot-service.example_recovery \
     fastbootd
 
+# Power
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor
+
+$(call soong_config_set,power_libperfmgr,mode_extension_lib,power-ext-oplus)
+
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.lineage-libperfmgr \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+
+PRODUCT_PACKAGES += \
+    libmtkperf_client \
+    libpowerhalwrap_vendor
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Properties
 include hardware/mediatek/configs/properties/vendor_logtag.mk
 
@@ -143,7 +160,12 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/google/pixel/power-libperfmgr \
+    hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
+    hardware/mediatek/libmtkperf_client \
     hardware/oplus
 
 # VNDK
