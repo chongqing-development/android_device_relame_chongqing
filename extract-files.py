@@ -84,6 +84,14 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('__aeabi_memcpy')
         .clear_symbol_version('__aeabi_memset')
         .clear_symbol_version('__gnu_Unwind_Find_exidx'),
+    'vendor/lib64/liboplus_mtkcam_lightsensorprovider.so': blob_fixup()
+        .replace_needed('libsensorndkbridge.so', 'libsensorndkbridge-v30.so'),
+    (
+        'vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so',
+        'vendor/lib64/mt6835/libaalservice.so',
+        'vendor/lib64/mt6835/libcam.utils.sensorprovider.so'
+    ): blob_fixup()
+        .add_needed('libshim_sensors.so'),
     'system_ext/etc/init/init.vtservice.rc': blob_fixup()
         .regex_replace('start', 'enable'),
     'vendor/bin/hw/android.hardware.security.keymint@2.0-service.trustonic': blob_fixup()
