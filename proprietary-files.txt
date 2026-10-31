@@ -6,6 +6,11 @@ vendor/lib/libladder.so
 vendor/lib64/libaedv.so
 vendor/lib64/libladder.so
 
+# CDSP
+odm/lib64/libcdsprpc.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libcdsprpc.so;MODULE_SUFFIX=_vendor
+
 # DMC
 vendor/bin/dmc_core
 vendor/etc/init/dmc_core.rc
