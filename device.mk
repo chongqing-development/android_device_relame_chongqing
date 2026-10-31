@@ -98,6 +98,36 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Camera
+PRODUCT_PACKAGES += \
+    libexif.vendor
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/camera/hi1336:$(TARGET_COPY_OUT_ODM)/etc/camera/config/hi1336 \
+    $(LOCAL_PATH)/configs/camera/ov02b1b:$(TARGET_COPY_OUT_ODM)/etc/camera/config/ov02b1b \
+    $(LOCAL_PATH)/configs/camera/ov08d10:$(TARGET_COPY_OUT_ODM)/etc/camera/config/ov08d10
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/camera/23604/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/overlay/prj_23604/odm/etc/camera/CameraHWConfiguration.config \
+    $(LOCAL_PATH)/configs/camera/23605_23606/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/overlay/prj_23605/odm/etc/camera/CameraHWConfiguration.config \
+    $(LOCAL_PATH)/configs/camera/23605_23606/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/overlay/prj_23606/odm/etc/camera/CameraHWConfiguration.config \
+    $(LOCAL_PATH)/configs/camera/23670_23671/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/overlay/prj_23670/odm/etc/camera/CameraHWConfiguration.config \
+    $(LOCAL_PATH)/configs/camera/23670_23671/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/overlay/prj_23671/odm/etc/camera/CameraHWConfiguration.config
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/camera/23604/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/overlay/prj_23604/odm/etc/camera/config/oplus_camera_aps_config \
+    $(LOCAL_PATH)/configs/camera/23605_23606/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/overlay/prj_23605/odm/etc/camera/config/oplus_camera_aps_config \
+    $(LOCAL_PATH)/configs/camera/23605_23606/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/overlay/prj_23606/odm/etc/camera/config/oplus_camera_aps_config \
+    $(LOCAL_PATH)/configs/camera/23670_23671/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/overlay/prj_23670/odm/etc/camera/config/oplus_camera_aps_config \
+    $(LOCAL_PATH)/configs/camera/23670_23671/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/overlay/prj_23671/odm/etc/camera/config/oplus_camera_aps_config
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+    frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
+    frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
+    frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
+    frameworks/native/data/etc/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml
+
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 

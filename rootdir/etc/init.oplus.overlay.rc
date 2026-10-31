@@ -5,5 +5,9 @@
 #
 
 on init
+    # Camera
+    mount none /odm/overlay/prj_${ro.boot.prjname}/odm/etc/camera/CameraHWConfiguration.config /odm/etc/camera/CameraHWConfiguration.config bind
+    mount none /odm/overlay/prj_${ro.boot.prjname}/odm/etc/camera/config/oplus_camera_aps_config /odm/etc/camera/config/oplus_camera_aps_config bind
+
     # Charger
     mount none /odm/overlay/prj_${ro.boot.prjname}/odm/firmware/fastchg/charging_thermal_config_default.txt /odm/firmware/fastchg/charging_thermal_config_default.txt bind
