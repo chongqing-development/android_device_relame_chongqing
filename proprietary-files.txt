@@ -1118,6 +1118,11 @@ vendor/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk.so;MODULE_SUFFIX=_
 vendor/etc/apdb/APDB_MT6835___W2335
 vendor/etc/apdb/APDB_MT6835___W2335_ENUM
 
+# Secure Element
+vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
+vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
+vendor/etc/init/em_hal_user.rc
+
 # Sensors
 odm/bin/hw/vendor-oplus-hardware-oplusSensor-V1-service
 odm/etc/init/vendor-oplus-hardware-oplusSensor-V1-service.rc
