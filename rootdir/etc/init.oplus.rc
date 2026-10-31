@@ -46,3 +46,14 @@ on property:ro.boot.prjname=*
 
     # Radio
     setprop ro.product.hw ${ro.boot.prjname}
+
+service occe_create /odm/bin/occe_create
+    class main
+    user root
+    group root media_rw
+    oneshot
+
+on post-fs-data
+    mkdir /mnt/occe 0777 media_rw media_rw
+    mkdir /mnt/occe/shader 0777 media_rw media_rw
+    mkdir /mnt/occe/shader/fb_binary 0777 media_rw media_rw
