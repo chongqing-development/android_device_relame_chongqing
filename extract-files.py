@@ -97,6 +97,16 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libsource.so': blob_fixup()
         .add_needed('libui_shim.so'),
     (
+        'odm/lib/libCOppLceTonemapAPI.so',
+        'odm/lib/libYTCommon.so',
+        'odm/lib64/libcdsprpc.so',
+        'odm/lib64/libCOppLceTonemapAPI.so',
+        'odm/lib64/libYTCommon.so',
+        'vendor/lib64/libadsprpc.so',
+        'vendor/lib64/libcdsprpc.so'
+    ): blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    (
         'vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so',
         'vendor/lib64/libcodec2_vpp_AISR_plugin.so'
     ): blob_fixup()
