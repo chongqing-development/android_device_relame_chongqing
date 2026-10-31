@@ -1,0 +1,9 @@
+#
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on init
+    # Charger
+    mount none /odm/overlay/prj_${ro.boot.prjname}/odm/firmware/fastchg/charging_thermal_config_default.txt /odm/firmware/fastchg/charging_thermal_config_default.txt bind

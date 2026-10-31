@@ -89,6 +89,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oplus.overlay.rc",
+    src: "etc/init.oplus.overlay.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.project.rc",
     src: "etc/init.project.rc",
     sub_dir: "init/hw",

@@ -63,6 +63,14 @@ TARGET_SCREEN_WIDTH := 1080
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Charger
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/fastchg/23604_23670_23671/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/overlay/prj_23604/odm/firmware/fastchg/charging_thermal_config_default.txt \
+    $(LOCAL_PATH)/configs/fastchg/23604_23670_23671/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/overlay/prj_23670/odm/firmware/fastchg/charging_thermal_config_default.txt \
+    $(LOCAL_PATH)/configs/fastchg/23604_23670_23671/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/overlay/prj_23671/odm/firmware/fastchg/charging_thermal_config_default.txt \
+    $(LOCAL_PATH)/configs/fastchg/23605_23606/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/overlay/prj_23605/odm/firmware/fastchg/charging_thermal_config_default.txt \
+    $(LOCAL_PATH)/configs/fastchg/23605_23606/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/overlay/prj_23606/odm/firmware/fastchg/charging_thermal_config_default.txt
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek
@@ -158,6 +166,7 @@ PRODUCT_PACKAGES += \
     init.mt6835.rc \
     init.mt6835.usb.rc \
     init.mtkgki.rc \
+    init.oplus.overlay.rc \
     init.oplus.rc \
     init.project.rc \
     init.sensor_2_0.rc
