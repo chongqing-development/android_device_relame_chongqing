@@ -1,0 +1,14 @@
+dontaudit audioserver vendor_default_prop:file { read map open getattr };
+dontaudit cameraserver vendor_default_prop:file { read map open getattr };
+dontaudit ccci_rpcd default_prop:file { read map open getattr };
+dontaudit hal_audio_default default_prop:file { read map open getattr };
+dontaudit mnld default_prop:file { read open getattr map };
+dontaudit mnld system_prop:file { read open getattr map };
+dontaudit mtk_hal_camera default_prop:file { read map open getattr };
+dontaudit mtk_hal_camera system_prop:file { read map open getattr };
+dontaudit occe_create default_prop:file { read map open getattr };
+dontaudit shell sysfs_power_supply:dir { search read open };
+dontaudit shell sysfs_power_supply:file { read open getattr };
+dontaudit surfaceflinger vendor_default_prop:file { read map open getattr };
+dontaudit untrusted_app vendor_default_prop:file { read map open getattr };
+dontaudit vendor_init default_prop:property_service set;

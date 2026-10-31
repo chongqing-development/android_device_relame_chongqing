@@ -203,6 +203,12 @@ BOOT_SECURITY_PATCH := 2025-02-01
 INIT_BOOT_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 VENDOR_SECURITY_PATCH := 2025-02-01
 
+# SELinux
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+include hardware/oplus/sepolicy/mtk/SEPolicy.mk
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
