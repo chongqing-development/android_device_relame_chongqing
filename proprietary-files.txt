@@ -349,6 +349,20 @@ vendor/lib64/libksensor.so
 vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libSensorSave.so
 
+# Thermal
+vendor/bin/thermal_core
+vendor/bin/thermal_intf
+vendor/etc/init/init.thermal_core.rc
+vendor/etc/thermal/disable_skin_control.conf
+vendor/etc/thermal/disable_thermal.conf
+vendor/etc/thermal/disable_thermal_temp.conf
+vendor/etc/thermal/disable_throttling.conf
+vendor/etc/thermal/thermal.conf
+vendor/etc/thermal/thermal_mtbf.conf
+vendor/etc/thermal/thermal_policy_00.conf
+vendor/etc/thermal/thermal_policy_02.conf
+vendor/etc/thermal/thermal_policy_08.conf
+
 # Touch
 vendor/bin/touch_boost
 vendor/etc/init/touch_boost.rc

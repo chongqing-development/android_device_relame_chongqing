@@ -1,0 +1,282 @@
+{
+    "Sensors": [
+        {
+            "Name": "soc_max",
+            "Type": "SOC",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, 105.0, 113.5],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "cpu_big1",
+            "Type": "CPU",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "cpu_big2",
+            "Type": "CPU",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "cpu_big3",
+            "Type": "CPU",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "cpu_big4",
+            "Type": "CPU",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "cpu_little1",
+            "Type": "CPU",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "cpu_little2",
+            "Type": "CPU",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "cpu_little3",
+            "Type": "CPU",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "cpu_little4",
+            "Type": "CPU",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "gpu1",
+            "Type": "GPU",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "gpu2",
+            "Type": "GPU",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "soc1",
+            "Type": "SOC",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "soc2",
+            "Type": "SOC",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "soc3",
+            "Type": "SOC",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "soc4",
+            "Type": "SOC",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, "NAN", "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "md1",
+            "Type": "MODEM",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, 105.0, "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "md2",
+            "Type": "MODEM",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, 105.0, "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "md3",
+            "Type": "MODEM",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, 105.0, "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "md4",
+            "Type": "MODEM",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, 105.0, "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "consys",
+            "Type": "UNKNOWN",
+            "HotThreshold": ["NAN", 80.0, 85.0, 90.0, 95.0, 105.0, "NAN"],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "flashled_ntc",
+            "Type": "FLASHLIGHT",
+            "HotThreshold": ["NAN", 60.0, 65.0, 70.0, 75.0, 80.0, 85.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "usbcon_ntc",
+            "Type": "USB_PORT",
+            "HotThreshold": ["NAN", 45.0, 50.0, 55.0, 60.0, 65.0, 70.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "charge_ntc",
+            "Type": "BATTERY",
+            "HotThreshold": ["NAN", 45.0, 50.0, 55.0, 60.0, 65.0, 70.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "charging_ntc",
+            "Type": "BATTERY",
+            "HotThreshold": ["NAN", 45.0, 50.0, 55.0, 60.0, 65.0, 70.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "ap_ntc",
+            "Type": "SKIN",
+            "HotThreshold": ["NAN", 39.0, 43.0, 44.0, 50.0, 54.0, 63.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "ltepa_ntc",
+            "Type": "POWER_AMPLIFIER",
+            "HotThreshold": ["NAN", "NAN", "NAN", 68.0, 90.0, 100.0, 110.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "nrpa_ntc",
+            "Type": "POWER_AMPLIFIER",
+            "HotThreshold": ["NAN", "NAN", "NAN", 68.0, 90.0, 100.0, 110.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "tsx_ntc",
+            "Type": "UNKNOWN",
+            "HotThreshold": ["NAN", 60.0, 65.0, 70.0, 75.0, 80.0, 85.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "battery",
+            "Type": "BATTERY",
+            "HotThreshold": ["NAN", 45.0, 50.0, 55.0, 60.0, 65.0, 70.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "mtk-master-charger",
+            "Type": "USB_PORT",
+            "HotThreshold": ["NAN", 45.0, 50.0, 55.0, 60.0, 65.0, 70.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "shell_front",
+            "Type": "SKIN",
+            "HotThreshold": ["NAN", 39.0, 43.0, 44.0, 50.0, 54.0, 63.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "shell_frame",
+            "Type": "SKIN",
+            "HotThreshold": ["NAN", 39.0, 43.0, 44.0, 50.0, 54.0, 63.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "shell_back",
+            "Type": "SKIN",
+            "HotThreshold": ["NAN", 39.0, 43.0, 44.0, 50.0, 54.0, 63.0],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001,
+            "Monitor": true
+        }
+    ],
+    "CoolingDevices": [
+        {
+            "Name": "charger-cooler",
+            "Type": "BATTERY"
+        },
+        {
+            "Name": "lcd-backlight",
+            "Type": "DISPLAY"
+        },
+        {
+            "Name": "devfreq-13000000.mali",
+            "Type": "GPU"
+        }
+    ]
+}
