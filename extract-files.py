@@ -62,6 +62,11 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/android.hardware.power-service-mediatek.so': blob_fixup()
         .add_needed('libbase_shim.so'),
     (
+        'odm/lib/ese_spi_nxp_nq330.so',
+        'odm/lib64/ese_spi_nxp_nq330.so'
+    ): blob_fixup()
+        .add_needed('libbase_shim.so'),
+    (
         'vendor/lib/libtflite_mtk.so',
         'vendor/lib/libnvram.so',
         'vendor/lib64/libtflite_mtk.so',
