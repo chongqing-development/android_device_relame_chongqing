@@ -1055,3 +1055,35 @@ service fuelgauged_nvram /vendor/bin/fuelgauged_nvram
    group system
    oneshot
 ##endif
+
+# NFC
+service oplusfelicservice /odm/bin/hw/vendor.oplus.hardware.felica@1.0-service
+    class hal
+    user  system
+    group nfc system
+    disabled
+
+service nfcExtnsService /odm/bin/hw/vendor.oplus.hardware.nfcExtns-service
+    class hal
+    user  system
+    group nfc system
+    disabled
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
+
+service oplusnfc_aidl_hal_service /odm/bin/hw/vendor.oplus.hardware.nfc_aidl-service
+    class hal
+    user nfc
+    group nfc
+    disabled
+
+on property:ro.boot.product.hardware.sku=nfc
+    start oplusfelicservice
+    start nfcExtnsService
+    start vendor.nfc_hal_service
+    start oplusnfc_aidl_hal_service
