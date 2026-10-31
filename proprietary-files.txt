@@ -427,6 +427,9 @@ vendor/lib64/libcdsprpc.so;MODULE_SUFFIX=_vendor
 vendor/bin/chipinfo
 vendor/etc/init/chipinfo_init.rc
 
+# Connectivity
+vendor/bin/conninfra_loader
+
 # Display
 odm/bin/hw/vendor.oplus.hardware.displaypanelfeature@1.0-service
 odm/etc/init/vendor.oplus.hardware.displaypanelfeature@1.0-service.rc
@@ -885,6 +888,17 @@ vendor/lib64/libhwm-oplus.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libksensor.so
 vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libSensorSave.so
+
+# Tether offload
+vendor/bin/hw/tetheroffloadservice
+vendor/bin/netdagent
+vendor/etc/init/netdagent.rc
+vendor/etc/init/networksetting.rc
+vendor/etc/init/tetheroffloadservice.rc
+vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libifcutils_mtk.so
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Thermal
 vendor/bin/thermal_core
