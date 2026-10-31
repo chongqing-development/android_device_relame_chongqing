@@ -59,6 +59,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
+    'vendor/lib64/android.hardware.power-service-mediatek.so': blob_fixup()
+        .add_needed('libbase_shim.so'),
     (
         'vendor/lib/libtflite_mtk.so',
         'vendor/lib/libnvram.so',
