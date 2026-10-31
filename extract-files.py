@@ -107,8 +107,12 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     (
+        'odm/lib/libAlgoProcess.so',
+        'odm/lib64/libAlgoProcess.so',
+        'vendor/lib/vendor.mediatek.hardware.pq_aidl-V1-ndk.so',
         'vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so',
-        'vendor/lib64/libcodec2_vpp_AISR_plugin.so'
+        'vendor/lib64/libcodec2_vpp_AISR_plugin.so',
+        'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so'
     ): blob_fixup()
         .replace_needed('android.hardware.graphics.common-V3-ndk', 'android.hardware.graphics.common-V6-ndk'),
 }  # fmt: skip
