@@ -121,3 +121,11 @@ odm/lib/vendor.oplus.hardware.olc2-V1-ndk_platform.so
 odm/lib64/libolc_vnd.so
 odm/lib64/vendor.oplus.hardware.olc2-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so
+
+# UFS Firmware
+odm/firmware/ufs/MICRON-MT128GAXAU2U22.bin
+odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh
+odm/firmware/ufs/SAMSUNG-KLUEG4R1DE-B0F1.bin
+odm/firmware/ufs/SKhynix-HN8G962EHKX037.bin
+odm/firmware/ufs/SKhynix-HN8T062EHKX039.bin
+odm/firmware/ufs/SKhynix-HN8T162EHKX041.bin
