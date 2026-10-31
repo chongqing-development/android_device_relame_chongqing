@@ -112,3 +112,12 @@ vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so
+
+# OPLUS Log Core
+odm/bin/oldc_vnd
+odm/lib/libolc_vnd.so
+odm/lib/vendor.oplus.hardware.olc2-V1-ndk.so
+odm/lib/vendor.oplus.hardware.olc2-V1-ndk_platform.so
+odm/lib64/libolc_vnd.so
+odm/lib64/vendor.oplus.hardware.olc2-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so
