@@ -21,6 +21,13 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.trustonic.hardware.soter</name>
+        <interface>
+            <name>ITrustonicSoter</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.displaypanelfeature</name>
         <version>1.0</version>
