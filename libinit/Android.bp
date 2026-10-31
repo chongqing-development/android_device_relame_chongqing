@@ -1,0 +1,16 @@
+// Copyright (C) 2020 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+
+cc_library_static {
+    name: "libinit_chongqing",
+    recovery_available: true,
+    whole_static_libs: ["libbase"],
+    header_libs: [
+        "libbase_headers",
+    ],
+    srcs: ["init_chongqing.cpp"],
+    include_dirs: [
+        "system/core/init",
+    ],
+}
