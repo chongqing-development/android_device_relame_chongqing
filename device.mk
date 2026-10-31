@@ -252,6 +252,35 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnel_migration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnel_migration.xml \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
+# Overlays
+$(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
+$(call inherit-product, hardware/mediatek/overlay/mssi.mk)
+
+PRODUCT_PACKAGES += \
+    ChongqingApertureOverlay \
+    ChongqingCarrierConfigOverlay \
+    ChongqingDozeOverlay \
+    ChongqingFrameworksResTarget \
+    ChongqingLauncher3Overlay \
+    ChongqingSettingsOverlay \
+    ChongqingSystemUIOverlay \
+    ChongqingTetheringConfigOverlay \
+    ChongqingWifiResOverlay
+
+PRODUCT_PACKAGES += \
+    ChongqingSettingsProviderOverlay23605 \
+    ChongqingSettingsProviderOverlay23606 \
+    ChongqingSettingsProviderOverlay23660 \
+    ChongqingSettingsProviderOverlay23661 \
+    ChongqingSettingsProviderOverlay23670 \
+    ChongqingSettingsProviderOverlay23671 \
+    ChongqingWifiResOverlay23605 \
+    ChongqingWifiResOverlay23606 \
+    ChongqingWifiResOverlay23660 \
+    ChongqingWifiResOverlay23661 \
+    ChongqingWifiResOverlay23670 \
+    ChongqingWifiResOverlay23671
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 

@@ -1,0 +1,16 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "ChongqingSettingsProviderOverlay23670",
+    device_specific: true,
+    manifest: "AndroidManifest_23670.xml",
+}
+
+runtime_resource_overlay {
+    name: "ChongqingSettingsProviderOverlay23671",
+    device_specific: true,
+    manifest: "AndroidManifest_23671.xml",
+}
