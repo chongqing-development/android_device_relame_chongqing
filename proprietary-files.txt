@@ -1,5 +1,11 @@
 # Unpinned blobs from RMX3780EEA-user 14 UKQ1.230924.001 T.R4T2.1c3c35a-7ad3-7ad4 release-keys
 
+# AEE
+vendor/lib/libaedv.so
+vendor/lib/libladder.so
+vendor/lib64/libaedv.so
+vendor/lib64/libladder.so
+
 # DMC
 vendor/bin/dmc_core
 vendor/etc/init/dmc_core.rc
