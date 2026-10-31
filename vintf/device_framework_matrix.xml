@@ -66,4 +66,11 @@
             <instance>OplusAppRadio1</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.ormsHalService</name>
+        <interface>
+            <name>IOrmsAidlHalService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>

@@ -2991,6 +2991,17 @@ odm/lib64/libolc_vnd.so
 odm/lib64/vendor.oplus.hardware.olc2-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so
 
+# ORMS
+odm/bin/hw/vendor.oplus.hardware.ormsHalService-aidl-service
+odm/etc/init/ormsHalService-default.rc
+odm/etc/vintf/manifest/ormsHalService-default.xml
+odm/lib/libormshalclient.so
+odm/lib/vendor.oplus.hardware.orms@1.0.so
+odm/lib/vendor.oplus.hardware.ormsHalService-V1-ndk.so
+odm/lib64/libormshalclient.so
+odm/lib64/vendor.oplus.hardware.orms@1.0.so
+odm/lib64/vendor.oplus.hardware.ormsHalService-V1-ndk.so
+
 # Osense
 odm/lib/libosenseaidlhalclient.so
 odm/lib/libosensehalclient.so
