@@ -57,29 +57,21 @@ blob_fixups: blob_fixups_user_type = {
     'odm/bin/hw/vendor-oplus-hardware-performance-V1-service': blob_fixup()
         .add_needed('libbase_shim.so')
         .add_needed('libprocessgroup_shim.so'),
-    'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
-        .add_needed('libprocessgroup_shim.so'),
-    'vendor/lib64/android.hardware.power-service-mediatek.so': blob_fixup()
-        .add_needed('libbase_shim.so'),
     (
+        'odm/bin/hw/vendor.oplus.hardware.charger-V3-service',
         'odm/lib/ese_spi_nxp_nq330.so',
-        'odm/lib64/ese_spi_nxp_nq330.so'
-    ): blob_fixup()
-        .add_needed('libbase_shim.so'),
-    (
+        'odm/lib64/ese_spi_nxp_nq330.so',
         'vendor/lib/libtflite_mtk.so',
         'vendor/lib/libnvram.so',
-        'vendor/lib64/libtflite_mtk.so',
-        'vendor/lib64/libnvram.so'
-    ): blob_fixup()
-        .add_needed('libbase_shim.so'),
-    (
         'vendor/lib/mt6835/libneuralnetworks_sl_driver_mtk_prebuilt.so',
+        'vendor/lib64/android.hardware.power-service-mediatek.so',
+        'vendor/lib64/libtflite_mtk.so',
+        'vendor/lib64/libnvram.so',
         'vendor/lib64/mt6835/libneuralnetworks_sl_driver_mtk_prebuilt.so'
     ): blob_fixup()
         .add_needed('libbase_shim.so'),
-    'odm/bin/hw/vendor.oplus.hardware.charger-V3-service': blob_fixup()
-        .add_needed('libbase_shim.so'),
+    'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
     'vendor/lib/libvcodec_oal.so': blob_fixup()
         .clear_symbol_version('__aeabi_memcpy')
         .clear_symbol_version('__aeabi_memset')
